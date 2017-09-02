@@ -8,17 +8,9 @@ public class FindMinMax {
 
 		++prof;
 
-		/*
-		 * if (pos==5) System.out.println("nodo 5"); else{
-		 * System.out.print("arr[pos]:"+arr[pos]+" actSum:"+actSum+" pos: "
-		 * +pos+" prof: "+prof); }
-		 */
-
 		for (int i = pos; i < arr.length; i++) {
 
 			tmpSum = actSum + arr[i];
-
-			// System.out.println(" tmpSum: "+tmpSum+" pos: "+i+" prof: "+prof);
 
 			if (prof == 4) {
 				actSolution[0] = (tmpSum < actSolution[0]) ? tmpSum : actSolution[0];
@@ -55,6 +47,10 @@ public class FindMinMax {
 		}
 	}
 
+	/**
+	 * Casos de prueba
+	 * @return
+	 */
 	static int[][] tests() {
 
 		int[][] tests = { 
